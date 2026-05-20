@@ -1,0 +1,33 @@
+{
+  "name": "Company Import - 50 Records",
+  "importOperations": {
+    "0-2": "CREATE"
+  },
+  "files": [
+    {
+      "fileName": "company-data.csv",
+      "fileFormat": "CSV",
+      "fileImportPage": {
+        "hasHeader": true,
+        "columnMappings": [
+          {
+            "columnObjectTypeId": "0-2",
+            "columnName": "Name",
+            "propertyName": "name"
+          },
+          {
+            "columnObjectTypeId": "0-2",
+            "columnName": "Company domain name",
+            "propertyName": "domain",
+            "columnType": "HUBSPOT_ALTERNATE_ID"
+          },
+          {
+            "columnObjectTypeId": "0-2",
+            "columnName": "Phone number",
+            "propertyName": "phone"
+          }
+        ]
+      }
+    }
+  ]
+}
