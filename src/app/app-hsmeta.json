@@ -2,7 +2,7 @@
   "uid": "app-onsite-oauth-app",
   "type": "app",
   "config": {
-    "description": "An example to demonstrate how to build a marketplace app with developer projects.",
+    "description": "An example to demonstrate how to build a marketplace app with developer projects. hi",
     "name": "onsite-oauth-app-Application",
     "distribution": "marketplace",
     "auth": {
