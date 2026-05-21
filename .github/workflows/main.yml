@@ -2,14 +2,16 @@ on:
   push:
     branches:
       - 'main'
-env:
-  DEFAULT_ACCOUNT_ID: ${{ secrets.HUBSPOT_ACCOUNT_ID }}
-  DEFAULT_PERSONAL_ACCESS_KEY: ${{ secrets.HUBSPOT_PERSONAL_ACCESS_KEY }}
+      
 jobs:
-  deploy:
+  deploy-prod:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: HubSpot Project Action
-        uses: HubSpot/hubspot-project-actions@v1.0.0
+      - name: Upload to PROD
+        uses: HubSpot/hubspot-project-actions/project-upload@v1.1.0
+        with:
+          profile: "prod"
+          account_id: ${{ secrets.HUBSPOT_ACCOUNT_ID }}
+          personal_access_key: ${{ secrets.HUBSPOT_PERSONAL_ACCESS_KEY }}
