@@ -1,5 +1,5 @@
 {
-  "name": "onsite-oauth-app",
+  "name": "onsite-oauth-app-${ENV}",
   "srcDir": "src",
   "platformVersion": "2025.2"
 }

@@ -3,7 +3,7 @@
   "type": "app",
   "config": {
     "description": "An example to demonstrate how to build a marketplace app with developer projects. hi",
-    "name": "onsite-oauth-app-Application",
+    "name": "onsite-oauth-app-Application-${ENV}",
     "distribution": "marketplace",
     "auth": {
       "type": "oauth",
